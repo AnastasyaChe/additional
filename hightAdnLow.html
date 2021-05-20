@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Вам дана строка, состоящая из цифр, 
+    // разделенных пробелами. 
+    // Напишите функцию, которая обработает строку и
+    // вернет наибольшее и наименьшее число.
+        function highAndLow(string) {
+            let numArr = string.split(' ').map(Number);
+            let hightNum = Math.max(...numArr);
+            let lowNum = Math.min(...numArr);
+            let arrOfResult = [];
+            arrOfResult.push(hightNum, lowNum);
+            let stringOfResult = result.join(' ');
+            return stringOfResult;
+            
+        }
+
+    console.log(highAndLow("1 2 3 4 5"));
+    </script>
+</body>
+</html>
